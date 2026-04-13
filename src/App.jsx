@@ -91,10 +91,12 @@ function DiscoverPage() {
           <button key={tab} className={`tab ${i === 0 ? 'active' : ''}`}>{tab}</button>
         ))}
       </div>
-      <div className="brand-grid">
-        {brands.map(brand => (
-          <div key={brand} className="brand-item">{brand}</div>
-        ))}
+      <div className="brand-grid-wrapper">
+        <div className="brand-grid">
+          {brands.map(brand => (
+            <div key={brand} className="brand-item">{brand}</div>
+          ))}
+        </div>
       </div>
       <div className="gradient-divider" />
       <div className="invite-section">
@@ -137,17 +139,17 @@ function OnboardingPage() {
         <div className="form-group">
           <label>Profile Name</label>
           <input type="text" defaultValue="Julia Brandy7" onFocus={() => setFilled(true)} />
-          <span className="check-icon">✅</span>
+          <span className="check-icon"><svg width="22" height="22" viewBox="0 0 22 22" fill="none"><circle cx="11" cy="11" r="10" stroke="#2ECC71" strokeWidth="1.5" fill="none"/><path d="M6.5 11.5L9.5 14.5L15.5 8.5" stroke="#2ECC71" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg></span>
         </div>
         <div className="form-group">
           <label>Full Legal Name</label>
           <input type="text" defaultValue="Julia Brandy7" />
-          <span className="check-icon">✅</span>
+          <span className="check-icon"><svg width="22" height="22" viewBox="0 0 22 22" fill="none"><circle cx="11" cy="11" r="10" stroke="#2ECC71" strokeWidth="1.5" fill="none"/><path d="M6.5 11.5L9.5 14.5L15.5 8.5" stroke="#2ECC71" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg></span>
         </div>
         <div className="form-group">
           <label>Email</label>
           <input type="email" defaultValue="julia+BrandTest7@benable.com" />
-          <span className="check-icon">✅</span>
+          <span className="check-icon"><svg width="22" height="22" viewBox="0 0 22 22" fill="none"><circle cx="11" cy="11" r="10" stroke="#2ECC71" strokeWidth="1.5" fill="none"/><path d="M6.5 11.5L9.5 14.5L15.5 8.5" stroke="#2ECC71" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg></span>
         </div>
 
         <p style={{ fontSize: 13, color: 'var(--gray-700)', marginBottom: 10, marginTop: 8 }}>Phone number</p>
@@ -194,32 +196,32 @@ function ShippingAddressPage() {
         <div className="form-group">
           <label>Street Address</label>
           <input type="text" defaultValue="1125 Mason Street" />
-          <span className="check-icon">✅</span>
+          <span className="check-icon"><svg width="22" height="22" viewBox="0 0 22 22" fill="none"><circle cx="11" cy="11" r="10" stroke="#2ECC71" strokeWidth="1.5" fill="none"/><path d="M6.5 11.5L9.5 14.5L15.5 8.5" stroke="#2ECC71" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg></span>
         </div>
         <div className="form-group">
           <label>Apt / Suite</label>
           <input type="text" defaultValue="Apt 8" />
-          <span className="check-icon">✅</span>
+          <span className="check-icon"><svg width="22" height="22" viewBox="0 0 22 22" fill="none"><circle cx="11" cy="11" r="10" stroke="#2ECC71" strokeWidth="1.5" fill="none"/><path d="M6.5 11.5L9.5 14.5L15.5 8.5" stroke="#2ECC71" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg></span>
         </div>
         <div className="form-group">
           <label>City</label>
           <input type="text" defaultValue="San Francisco" />
-          <span className="check-icon">✅</span>
+          <span className="check-icon"><svg width="22" height="22" viewBox="0 0 22 22" fill="none"><circle cx="11" cy="11" r="10" stroke="#2ECC71" strokeWidth="1.5" fill="none"/><path d="M6.5 11.5L9.5 14.5L15.5 8.5" stroke="#2ECC71" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg></span>
         </div>
         <div className="form-group">
           <label>State</label>
           <input type="text" defaultValue="California" />
-          <span className="check-icon">✅</span>
+          <span className="check-icon"><svg width="22" height="22" viewBox="0 0 22 22" fill="none"><circle cx="11" cy="11" r="10" stroke="#2ECC71" strokeWidth="1.5" fill="none"/><path d="M6.5 11.5L9.5 14.5L15.5 8.5" stroke="#2ECC71" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg></span>
         </div>
         <div className="form-group">
           <label>Zip Code</label>
           <input type="text" defaultValue="94108" />
-          <span className="check-icon">✅</span>
+          <span className="check-icon"><svg width="22" height="22" viewBox="0 0 22 22" fill="none"><circle cx="11" cy="11" r="10" stroke="#2ECC71" strokeWidth="1.5" fill="none"/><path d="M6.5 11.5L9.5 14.5L15.5 8.5" stroke="#2ECC71" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg></span>
         </div>
         <div className="form-group">
           <label>Country</label>
           <input type="text" defaultValue="US" />
-          <span className="check-icon">✅</span>
+          <span className="check-icon"><svg width="22" height="22" viewBox="0 0 22 22" fill="none"><circle cx="11" cy="11" r="10" stroke="#2ECC71" strokeWidth="1.5" fill="none"/><path d="M6.5 11.5L9.5 14.5L15.5 8.5" stroke="#2ECC71" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg></span>
         </div>
       </div>
       <div className="bottom-fixed">
