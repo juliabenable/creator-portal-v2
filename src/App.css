@@ -200,32 +200,33 @@
   font-size: 22px;
 }
 .content-card .card-subtitle {
-  font-size: 12px;
+  font-size: 13px;
   color: var(--gray-500);
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  font-weight: 500;
+  font-weight: 400;
   margin-bottom: 10px;
 }
 .content-card p {
   font-size: 15px;
   line-height: 1.65;
-  color: var(--gray-700);
+  color: var(--gray-800);
 }
 
 /* Social Links Row */
 .social-links {
   display: flex;
-  gap: 20px;
+  gap: 22px;
   margin-top: 18px;
   font-size: 14px;
-  color: var(--gray-700);
+  color: var(--gray-800);
   font-weight: 500;
 }
 .social-links span {
   display: flex;
   align-items: center;
   gap: 6px;
+}
+.social-links svg {
+  flex-shrink: 0;
 }
 
 /* Warning Banner */
@@ -365,8 +366,8 @@
 }
 .invite-section .invite-desc {
   font-size: 15px;
-  color: var(--gray-600);
-  line-height: 1.5;
+  color: var(--gray-700);
+  line-height: 1.55;
   margin-bottom: 32px;
 }
 .invite-features {
@@ -381,7 +382,7 @@
   align-items: flex-start;
   gap: 14px;
   font-size: 15px;
-  color: var(--gray-700);
+  color: var(--gray-800);
   line-height: 1.4;
 }
 .invite-features .feature-icon {
@@ -496,7 +497,7 @@
   padding: 16px 22px 14px;
   font-size: 16px;
   font-weight: 500;
-  color: var(--gray-400);
+  color: var(--gray-500);
   background: none;
   border-bottom: 2.5px solid transparent;
 }
@@ -553,7 +554,7 @@
 .campaign-card .card-inner p {
   font-size: 14px;
   line-height: 1.55;
-  color: var(--gray-600);
+  color: var(--gray-800);
 }
 .campaign-card .founder-row {
   display: flex;
@@ -603,13 +604,13 @@
 /* ========== CAMPAIGN DETAILS ========== */
 .founder-quote {
   margin: 12px 20px;
-  background: #FFF9F0;
+  background: #FFF8EE;
   border-radius: var(--card-radius);
   padding: 22px;
   font-style: italic;
   font-size: 15px;
   line-height: 1.65;
-  color: var(--gray-700);
+  color: var(--gray-800);
 }
 .founder-card {
   display: flex;
@@ -687,7 +688,7 @@
 .brief-section li {
   font-size: 15px;
   line-height: 1.65;
-  color: var(--gray-700);
+  color: var(--gray-800);
   margin-bottom: 6px;
 }
 
@@ -699,7 +700,7 @@
   margin-bottom: 12px;
   font-size: 15px;
   line-height: 1.5;
-  color: var(--gray-700);
+  color: var(--gray-800);
 }
 .guideline-icon {
   flex-shrink: 0;
@@ -752,7 +753,7 @@
   padding: 16px;
   font-size: 15px;
   line-height: 1.65;
-  color: var(--gray-700);
+  color: var(--gray-800);
 }
 .shipping-card .address-name {
   font-weight: 600;
@@ -825,7 +826,7 @@
 }
 .delivery-status p {
   font-size: 15px;
-  color: var(--gray-600);
+  color: var(--gray-700);
   line-height: 1.55;
 }
 
@@ -924,7 +925,7 @@
 }
 .waiting-section p {
   font-size: 15px;
-  color: var(--gray-600);
+  color: var(--gray-700);
   line-height: 1.55;
 }
 
@@ -964,7 +965,7 @@
   font-size: 14px;
   font-style: italic;
   line-height: 1.65;
-  color: var(--gray-700);
+  color: var(--gray-800);
 }
 
 /* ========== PUBLISH (Step 4) ========== */
@@ -989,7 +990,7 @@
 .publish-info p {
   font-size: 14px;
   line-height: 1.55;
-  color: var(--gray-600);
+  color: var(--gray-700);
 }
 
 .links-section {
@@ -1159,7 +1160,7 @@
 .rights-card li {
   font-size: 15px;
   line-height: 1.65;
-  color: var(--gray-700);
+  color: var(--gray-800);
   padding-left: 20px;
   position: relative;
   margin-bottom: 4px;

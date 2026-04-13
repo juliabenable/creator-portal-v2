@@ -85,7 +85,7 @@ function DiscoverPage() {
   const brands = ['Nike', 'REVOLVE', 'Supergoop!', 'Vrbo', 'eBay', 'Bondi Sands', 'SKIMS', 'lululemon', 'ASOS', 'TJ Maxx', 'ULTA', 'Glow Recipe']
   return (
     <div className="page">
-      <NavHeader title="Discover" rightAction={<button className="search-btn">🔍</button>} />
+      <NavHeader title="Discover" rightAction={<button className="search-btn"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="8.5" cy="8.5" r="6" stroke="#1A1A2E" strokeWidth="1.8"/><line x1="13" y1="13" x2="18" y2="18" stroke="#1A1A2E" strokeWidth="1.8" strokeLinecap="round"/></svg></button>} />
       <div className="discover-tabs">
         {['Trending', 'Fashion', 'Beauty', 'Food'].map((tab, i) => (
           <button key={tab} className={`tab ${i === 0 ? 'active' : ''}`}>{tab}</button>
@@ -294,13 +294,13 @@ function CampaignDetailsPage() {
       <div className="page-content">
         {/* About the Brand */}
         <div className="content-card">
-          <div className="card-title"><span className="emoji">🔗</span> About the Brand</div>
+          <div className="card-title"><span className="emoji"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M8 12l4-4M6.5 10.5L4.3 12.7a2.5 2.5 0 003.5 3.5l2.2-2.2M10.5 6.5l2.2-2.2a2.5 2.5 0 013.5 3.5L14 10" stroke="#888" strokeWidth="1.5" strokeLinecap="round"/></svg></span> About the Brand</div>
           <div className="card-subtitle">Who are we</div>
           <p>Pikora makes instant bone broth blends inspired by simmered Latin flavors, with protein-rich staples designed to support everyday wellness, cooking, and convenient nourishment.</p>
           <div className="social-links">
-            <span>🌐 Website</span>
-            <span>📷 Instagram</span>
-            <span>🎵 TikTok</span>
+            <span><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="6.5" stroke="#444" strokeWidth="1.3"/><path d="M2 8h12M8 1.5c-2 2-2 4.5-2 6.5s0 4.5 2 6.5M8 1.5c2 2 2 4.5 2 6.5s0 4.5-2 6.5" stroke="#444" strokeWidth="1.1"/></svg> Website</span>
+            <span><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="1.5" y="1.5" width="13" height="13" rx="4" stroke="#444" strokeWidth="1.3"/><circle cx="8" cy="8" r="3.2" stroke="#444" strokeWidth="1.3"/><circle cx="12" cy="4" r="0.9" fill="#444"/></svg> Instagram</span>
+            <span><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 14V6.5a4 4 0 018 0V14" stroke="#444" strokeWidth="1.3" strokeLinecap="round"/><path d="M1.5 10.5a2.5 2.5 0 005 0V5.5" stroke="#444" strokeWidth="1.3" strokeLinecap="round"/><path d="M9.5 10.5a2.5 2.5 0 005 0V5.5" stroke="#444" strokeWidth="1.3" strokeLinecap="round"/></svg> TikTok</span>
           </div>
         </div>
 
@@ -325,7 +325,7 @@ function CampaignDetailsPage() {
           </div>
           <div className="product-price">USD 45.00</div>
           <div className="product-name">Big Dulce</div>
-          <div className="product-link">🔗 holapikora.com/products/big-dulce ↗</div>
+          <div className="product-link"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M5.5 8.5l3-3M4.5 7.5L3.2 8.8a1.8 1.8 0 002.5 2.5L7 10M7.5 4.5l1.3-1.3a1.8 1.8 0 012.5 2.5L10 7" stroke="#888" strokeWidth="1.2" strokeLinecap="round"/></svg> holapikora.com/products/big-dulce <span style={{marginLeft: 2}}>↗</span></div>
         </div>
 
         {/* Campaign Brief */}
@@ -360,16 +360,16 @@ function CampaignDetailsPage() {
           <div className="card-title"><span className="emoji">📝</span> Brand Guidelines</div>
           <div className="guidelines-do">
             <h4>DOs</h4>
-            <div className="guideline-item"><span className="guideline-icon">✅</span> Show the product clearly in use.</div>
-            <div className="guideline-item"><span className="guideline-icon">✅</span> Keep the content creator-native and easy to follow.</div>
-            <div className="guideline-item"><span className="guideline-icon">✅</span> Share an honest experience in your own voice.</div>
-            <div className="guideline-item"><span className="guideline-icon">✅</span> Include required disclosures.</div>
+            <div className="guideline-item"><span className="guideline-icon" style={{color:'#2ECC71'}}>✓</span> Show the product clearly in use.</div>
+            <div className="guideline-item"><span className="guideline-icon" style={{color:'#2ECC71'}}>✓</span> Keep the content creator-native and easy to follow.</div>
+            <div className="guideline-item"><span className="guideline-icon" style={{color:'#2ECC71'}}>✓</span> Share an honest experience in your own voice.</div>
+            <div className="guideline-item"><span className="guideline-icon" style={{color:'#2ECC71'}}>✓</span> Include required disclosures.</div>
           </div>
           <div className="guidelines-dont">
             <h4>DON'Ts</h4>
-            <div className="guideline-item"><span className="guideline-icon">❌</span> Do not make claims you cannot personally support.</div>
-            <div className="guideline-item"><span className="guideline-icon">❌</span> Do not include competitor products in the same post.</div>
-            <div className="guideline-item"><span className="guideline-icon">❌</span> Do not publish off-brief or misleading content.</div>
+            <div className="guideline-item"><span className="guideline-icon" style={{color:'#E74C3C'}}>✕</span> Do not make claims you cannot personally support.</div>
+            <div className="guideline-item"><span className="guideline-icon" style={{color:'#E74C3C'}}>✕</span> Do not include competitor products in the same post.</div>
+            <div className="guideline-item"><span className="guideline-icon" style={{color:'#E74C3C'}}>✕</span> Do not publish off-brief or misleading content.</div>
           </div>
         </div>
 
@@ -488,13 +488,13 @@ function Step3ContentPage() {
       <div className="page-content">
         {/* About the Brand */}
         <div className="content-card">
-          <div className="card-title"><span className="emoji">🔗</span> About the Brand</div>
+          <div className="card-title"><span className="emoji"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M8 12l4-4M6.5 10.5L4.3 12.7a2.5 2.5 0 003.5 3.5l2.2-2.2M10.5 6.5l2.2-2.2a2.5 2.5 0 013.5 3.5L14 10" stroke="#888" strokeWidth="1.5" strokeLinecap="round"/></svg></span> About the Brand</div>
           <div className="card-subtitle">Who are we</div>
           <p>Pikora makes instant bone broth blends inspired by simmered Latin flavors, with protein-rich staples designed to support everyday wellness, cooking, and convenient nourishment.</p>
           <div className="social-links">
-            <span>🌐 Website</span>
-            <span>📷 Instagram</span>
-            <span>🎵 TikTok</span>
+            <span><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="6.5" stroke="#444" strokeWidth="1.3"/><path d="M2 8h12M8 1.5c-2 2-2 4.5-2 6.5s0 4.5 2 6.5M8 1.5c2 2 2 4.5 2 6.5s0 4.5-2 6.5" stroke="#444" strokeWidth="1.1"/></svg> Website</span>
+            <span><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="1.5" y="1.5" width="13" height="13" rx="4" stroke="#444" strokeWidth="1.3"/><circle cx="8" cy="8" r="3.2" stroke="#444" strokeWidth="1.3"/><circle cx="12" cy="4" r="0.9" fill="#444"/></svg> Instagram</span>
+            <span><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 14V6.5a4 4 0 018 0V14" stroke="#444" strokeWidth="1.3" strokeLinecap="round"/><path d="M1.5 10.5a2.5 2.5 0 005 0V5.5" stroke="#444" strokeWidth="1.3" strokeLinecap="round"/><path d="M9.5 10.5a2.5 2.5 0 005 0V5.5" stroke="#444" strokeWidth="1.3" strokeLinecap="round"/></svg> TikTok</span>
           </div>
         </div>
 
@@ -541,16 +541,16 @@ function Step3ContentPage() {
           <div className="card-title"><span className="emoji">📝</span> Brand Guidelines</div>
           <div className="guidelines-do">
             <h4>DOs</h4>
-            <div className="guideline-item"><span className="guideline-icon">✅</span> Show the product clearly in use.</div>
-            <div className="guideline-item"><span className="guideline-icon">✅</span> Keep the content creator-native and easy to follow.</div>
-            <div className="guideline-item"><span className="guideline-icon">✅</span> Share an honest experience in your own voice.</div>
-            <div className="guideline-item"><span className="guideline-icon">✅</span> Include required disclosures.</div>
+            <div className="guideline-item"><span className="guideline-icon" style={{color:'#2ECC71'}}>✓</span> Show the product clearly in use.</div>
+            <div className="guideline-item"><span className="guideline-icon" style={{color:'#2ECC71'}}>✓</span> Keep the content creator-native and easy to follow.</div>
+            <div className="guideline-item"><span className="guideline-icon" style={{color:'#2ECC71'}}>✓</span> Share an honest experience in your own voice.</div>
+            <div className="guideline-item"><span className="guideline-icon" style={{color:'#2ECC71'}}>✓</span> Include required disclosures.</div>
           </div>
           <div className="guidelines-dont">
             <h4>DON'Ts</h4>
-            <div className="guideline-item"><span className="guideline-icon">❌</span> Do not make claims you cannot personally support.</div>
-            <div className="guideline-item"><span className="guideline-icon">❌</span> Do not include competitor products in the same post.</div>
-            <div className="guideline-item"><span className="guideline-icon">❌</span> Do not publish off-brief or misleading content.</div>
+            <div className="guideline-item"><span className="guideline-icon" style={{color:'#E74C3C'}}>✕</span> Do not make claims you cannot personally support.</div>
+            <div className="guideline-item"><span className="guideline-icon" style={{color:'#E74C3C'}}>✕</span> Do not include competitor products in the same post.</div>
+            <div className="guideline-item"><span className="guideline-icon" style={{color:'#E74C3C'}}>✕</span> Do not publish off-brief or misleading content.</div>
           </div>
         </div>
 
